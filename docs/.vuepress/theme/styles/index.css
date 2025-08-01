@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'LogoFont'; /* 自定义字体的名称 */
+    src: url('/font/segoesc.ttf') format('truetype'); /* TTF字体文件的路径 */
+}
+/*颜色*/
+:root {
+
+    /*文章背景线条颜色*/
+    --vp-doc-blog-bg: rgba(100, 190, 190, 0.09);
+    /*博客单项hover border 颜色*/
+    --vp-blog-post-item-hover-border: rgba(80, 134, 161, 0.5);
+    /*博客单项hover shadow*/
+    --vp-blog-post-item-hover-shadow: rgba(80, 134, 161, 0.2);
+}
+
+[data-theme="dark"] {
+    --vp-doc-blog-bg: rgba(30, 120, 120, 0.05);
+    --vp-blog-post-item-hover-border: rgba(80, 134, 161, 0.4);
+    --vp-blog-post-item-hover-shadow: rgba(80, 134, 161, 0.15);
+}
+
+/*左上角logo*/
+.vp-navbar-title span{
+    font-family: LogoFont, serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+/*文章背景*/
+.vp-doc-container {
+    background: radial-gradient(farthest-side at -33.33% 50%, #0000 52%, var(--vp-doc-blog-bg) 54% 57%, #0000 59%) 0
+    calc(100px / 2),
+    radial-gradient(farthest-side at 50% 133.33%, #0000 52%, var(--vp-doc-blog-bg) 54% 57%, #0000 59%) calc(100px / 2) 0,
+    radial-gradient(farthest-side at 133.33% 50%, #0000 52%, var(--vp-doc-blog-bg) 54% 57%, #0000 59%),
+    radial-gradient(farthest-side at 50% -33.33%, #0000 52%, var(--vp-doc-blog-bg) 54% 57%, #0000 59%), rgba(103, 145, 122, 0);
+    background-size: calc(100px / 4.667) 100px, 100px calc(100px / 4.667);
+}
+/*博客页面 单个卡片效果*/
+.vp-blog-post-item{
+    @media screen and (max-width: 770px) {
+        margin: 0 0!important;
+        border-radius: 6px;
+    }
+    transition: box-shadow 0.2s ease-out,border-color 0.2s ease-out!important;
+    border: 1px rgba(255, 0, 0, 0) solid;
+    &:hover{
+        box-shadow: 0 0 7px 2px var(--vp-blog-post-item-hover-shadow)!important;
+        border: 1px var(--vp-blog-post-item-hover-border) solid;
+    }
+}
