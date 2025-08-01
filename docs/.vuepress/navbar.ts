@@ -15,9 +15,6 @@ export const enNavbar = defineNavbarConfig([
     text: 'Notes', icon: "material-symbols:note",
     items: [{ text: 'FIT', link: '/notes/fit/README.md' }]
   },
-  { text: 'Language', icon: "material-symbols:language",
-    items: [{ text: 'English', link: '/' }, { text: '简体中文', link: '/zh/' }]
-  },
 ])
 
 export const zhNavbar = defineNavbarConfig([
@@ -28,9 +25,6 @@ export const zhNavbar = defineNavbarConfig([
   {
     text: '笔记', icon: "material-symbols:note", 
     items: [{ text: 'FIT', link: '/zh/notes/fit/README.md' }]
-  },
-  { text: 'Language', icon: "material-symbols:language",
-    items: [{ text: 'English', link: '/' }, { text: '简体中文', link: '/zh/' }]
   },
 ])
 
