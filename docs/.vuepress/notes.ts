@@ -23,51 +23,50 @@ import { defineNoteConfig, defineNotesConfig } from 'vuepress-theme-plume'
 
 /* =================== locale: en-US ======================= */
 
-const enDemoNote = defineNoteConfig({
-  dir: 'demo',
-  // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
-  // 如果 前缀不一致，则无法生成侧边栏。
-  // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
-  link: '/demo',
-  // 手动配置侧边栏结构
-  sidebar: ['', 'foo', 'bar'],
-  // 根据文件结构自动生成侧边栏
-  // sidebar: 'auto',
+const enFIT2014Note = defineNoteConfig({
+  dir: 'fit2014',
+  link: '/fit2014/',
+  sidebar: [
+    {
+      'text': 'Overview',
+      'link': 'README.md',
+    },
+    {
+      'prefix': 'languages',
+      'text': 'Languages',
+      'items': 'auto',
+    },
+  ],
 })
 
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
- * （enDemoNote 为参考示例，如果不需要它，请删除）
  */
 export const enNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [enDemoNote],
+  notes: [enFIT2014Note],
 })
 
 /* =================== locale: zh-CN ======================= */
 
-const zhDemoNote = defineNoteConfig({
-  dir: 'demo',
+const zhFIT2014Note = defineNoteConfig({
+  dir: 'FIT2014',
   // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
   // 如果 前缀不一致，则无法生成侧边栏。
   // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
-  link: '/demo',
-  // 手动配置侧边栏结构
-  sidebar: ['', 'foo', 'bar'],
-  // 根据文件结构自动生成侧边栏
-  // sidebar: 'auto',
+  link: '/fit2014/',
+  sidebar: 'auto',
 })
 
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
- * （zhDemoNote 为参考示例，如果不需要它，请删除）
  */
 export const zhNotes = defineNotesConfig({
   dir: 'zh/notes',
   link: '/zh/',
-  notes: [zhDemoNote],
+  notes: [zhFIT2014Note],
 })
 

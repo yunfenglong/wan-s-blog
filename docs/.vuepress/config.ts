@@ -18,12 +18,12 @@ export default defineUserConfig({
   lang: 'en-US',
   locales: {
     '/': {
-      title: 'WAN',
+      title: 'WAN\'s Blog',
       lang: 'en-US',
       description: 'WAN\'s blog',
     },
     '/zh/': {
-      title: 'WAN',
+      title: 'WAN\'s Blog',
       lang: 'zh-CN',
       description: 'WAN的博客',
     },
@@ -45,7 +45,7 @@ export default defineUserConfig({
     // editLink: true,
     // lastUpdated: true,
     // contributors: true,
-    // changelog: false,
+    changelog: true,
 
     /**
      * 博客
@@ -172,7 +172,7 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
     // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+    //   provider: 'Twikoo', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
     //   comment: true,
     //   repo: '',
     //   repoId: '',
