@@ -7,7 +7,7 @@ import FRIENDS from '../../../.vuepress/theme/data/friends.json'
     <p class="about-me-card-title-normal">链接</p>
     <div class="about-me-friends-title">
       <p class="about-me-card-text-big about-me-card-text-color">我的朋友</p>
-      <router-link to="/more/friends/">
+      <router-link to="/zh/more/friends/">
         <icon name="game-icons:three-friends"/>
         好友列表
       </router-link>
