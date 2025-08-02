@@ -33,7 +33,13 @@ export default defineThemeConfig({
    * 文章版权信息
    * @see https://theme-plume.vuejs.press/guide/features/copyright/
    */
-  copyright: 'CC-BY-NC-ND-4.0',
+  copyright: {
+    'license': 'CC-BY-NC-ND-4.0',
+    'author': {
+      'name': 'WARREN Y.F. LONG',
+      'url': 'https://github.com/yunfenglong'
+    },
+  },
 
   // prevPage: true,   // 是否启用上一页链接
   // nextPage: true,   // 是否启用下一页链接
