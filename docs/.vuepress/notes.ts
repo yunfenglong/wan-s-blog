@@ -36,9 +36,34 @@ const enFIT2014Note = defineNoteConfig({
       'text': 'Languages',
       'items': 'auto',
     },
+    {
+      'prefix': 'proofs',
+      'text': 'Proofs',
+      'items': 'auto',
+    },
   ],
 })
 
+const enFIT3143Note = defineNoteConfig({
+  dir: 'fit3143',
+  link: '/fit3143/',
+  sidebar: [
+    {
+      'text': 'Overview',
+      'link': 'README.md',
+    },
+    {
+      'prefix': 'introduction',
+      'text': 'Introduction',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'ipc',
+      'text': 'Inter-Process Communication',
+      'items': 'auto',
+    }
+  ],
+})
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -46,17 +71,20 @@ const enFIT2014Note = defineNoteConfig({
 export const enNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [enFIT2014Note],
+  notes: [enFIT2014Note, enFIT3143Note],
 })
 
 /* =================== locale: zh-CN ======================= */
 
 const zhFIT2014Note = defineNoteConfig({
   dir: 'FIT2014',
-  // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `link` 配置作为前缀
-  // 如果 前缀不一致，则无法生成侧边栏。
-  // 所以请确保  markdown 文件的 permalink 都以 `link` 开头
   link: '/fit2014/',
+  sidebar: 'auto',
+})
+
+const zhFIT3143Note = defineNoteConfig({
+  dir: 'fit3143',
+  link: '/fit3143/',
   sidebar: 'auto',
 })
 
@@ -67,6 +95,6 @@ const zhFIT2014Note = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'zh/notes',
   link: '/zh/',
-  notes: [zhFIT2014Note],
+  notes: [zhFIT2014Note, zhFIT3143Note],
 })
 

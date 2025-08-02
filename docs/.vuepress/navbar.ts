@@ -13,7 +13,9 @@ export const enNavbar = defineNavbarConfig([
   { text: 'Archives', link: '/blog/archives/', icon: "material-symbols:calendar-month" },
   {
     text: 'Notes', icon: "material-symbols:note",
-    items: [{ text: 'FIT2014', link: '/notes/fit2014/README.md' }]
+    items: [
+      { text: 'FIT2014', link: '/notes/fit2014/README.md' },
+      { text: 'FIT3143', link: '/notes/fit3143/README.md' },]
   },
 ])
 
@@ -24,7 +26,10 @@ export const zhNavbar = defineNavbarConfig([
   { text: '归档', link: '/zh/blog/archives/', icon: "material-symbols:calendar-month" },
   {
     text: '笔记', icon: "material-symbols:note", 
-    items: [{ text: 'FIT2014', link: '/zh/notes/fit2014/README.md' }]
+    items: [
+      { text: 'FIT2014', link: '/zh/notes/fit2014/README.md' },
+      { text: 'FIT3143', link: '/zh/notes/fit3143/README.md' },
+    ]
   },
 ])
 
