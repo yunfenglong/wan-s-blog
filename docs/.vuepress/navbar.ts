@@ -11,12 +11,7 @@ export const enNavbar = defineNavbarConfig([
   { text: 'Blog', link: '/blog/', icon: "material-symbols:article" },
   { text: 'Tags', link: '/blog/tags/', icon: "material-symbols:label" },
   { text: 'Archives', link: '/blog/archives/', icon: "material-symbols:calendar-month" },
-  {
-    text: 'Notes', icon: "material-symbols:note",
-    items: [
-      { text: 'FIT2014', link: '/notes/fit2014/README.md' },
-      { text: 'FIT3143', link: '/notes/fit3143/README.md' },]
-  },
+  { text: 'Notes', link: '/notes/', icon: "material-symbols:note" },
 ])
 
 export const zhNavbar = defineNavbarConfig([
@@ -24,12 +19,6 @@ export const zhNavbar = defineNavbarConfig([
   { text: '博客', link: '/zh/blog/', icon: "material-symbols:article" },
   { text: '标签', link: '/zh/blog/tags/', icon: "material-symbols:label" },
   { text: '归档', link: '/zh/blog/archives/', icon: "material-symbols:calendar-month" },
-  {
-    text: '笔记', icon: "material-symbols:note", 
-    items: [
-      { text: 'FIT2014', link: '/zh/notes/fit2014/README.md' },
-      { text: 'FIT3143', link: '/zh/notes/fit3143/README.md' },
-    ]
-  },
+  { text: '笔记', link: '/zh/notes/', icon: "material-symbols:note" },
 ])
 

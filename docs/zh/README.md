@@ -2,5 +2,5 @@
 pageLayout: home
 externalLinkIcon: false
 config:
-  - type: Custom-zh-CN
+  - type: Custom-zhCN
 ---
