@@ -16,6 +16,12 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/wan-s-blog/',
   lang: 'en-US',
+  
+  head: [
+    ['link', { rel: 'icon', href: '/wan-s-blog/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/wan-s-blog/favicon.ico' }],
+  ],
+  
   locales: {
     '/': {
       title: 'WAN\'s Blog',
@@ -130,7 +136,7 @@ export default defineUserConfig({
     //   youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
     //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
     //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
-    //   icon: { provider: 'iconify' },        // 启用内置图标语法  ::icon-name::
+      icon: { provider: 'iconify' },        // 启用内置图标语法  ::icon-name::
     //   table: true,        // 启用表格增强容器语法 ::: table
     //   codepen: true,      // 启用嵌入 codepen 语法 @[codepen](user/slash)
     //   replit: true,       // 启用嵌入 replit 语法 @[replit](user/repl-name)

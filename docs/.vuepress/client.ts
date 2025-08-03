@@ -6,9 +6,11 @@ import RepoCard from 'vuepress-theme-plume/features/RepoCard.vue'
 
 import './theme/styles/custom.css'
 import './theme/styles/index.css'
+import './theme/styles/friends.css'
 import Custom from './theme/components/Custom.vue'
 import Custom_zh_CN from '../zh/theme/components/Custom.vue'
-import AllFriendContent from './theme/components/AllFriendContent.vue'
+import FriendsPage from './theme/components/FriendsPage.vue'
+import FriendsPage_zh_CN from '../zh/theme/components/FriendsPage.vue'
 
 // import './theme/styles/custom.css'
 
@@ -22,7 +24,10 @@ export default defineClientConfig({
 
     // your custom components
     app.component('Custom', Custom)
-    app.component('Custom-zh-CN', Custom_zh_CN)
-    app.component('AllFriendContent', AllFriendContent)
+    app.component('Custom-zhCN', Custom_zh_CN)
+
+    app.component('FriendsPage', FriendsPage)
+    app.component('FriendsPage-zhCN', FriendsPage_zh_CN)
+
   },
 })

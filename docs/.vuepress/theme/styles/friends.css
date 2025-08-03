@@ -1,0 +1,307 @@
+/* Modern CSS for Friends Page Components */
+
+/* Root variables for design system */
+:root {
+  --friends-text-primary: #1d1d1f;
+  --friends-text-secondary: #86868b;
+  --friends-background: #ffffff;
+  --friends-background-secondary: #f5f5f7;
+  --friends-blue: #007aff;
+  --friends-border: rgba(0, 0, 0, 0.06);
+  --friends-shadow: rgba(0, 0, 0, 0.04);
+  --friends-shadow-hover: rgba(0, 122, 255, 0.15);
+  --friends-border-radius: 16px;
+  --friends-border-radius-small: 12px;
+  --friends-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --friends-font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Dark mode support */
+[data-theme="dark"] {
+  --friends-text-primary: #f5f5f7;
+  --friends-text-secondary: #86868b;
+  --friends-background: #000000;
+  --friends-background-secondary: #1d1d1f;
+  --friends-blue: #007aff;
+  --friends-border: rgba(255, 255, 255, 0.1);
+  --friends-shadow: rgba(0, 0, 0, 0.2);
+  --friends-shadow-hover: rgba(0, 122, 255, 0.25);
+}
+
+/* Base styles for friends page */
+.friends-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: var(--friends-font-family);
+  color: var(--friends-text-primary);
+  background-color: var(--friends-background);
+}
+
+/* Section styling */
+.friends-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--friends-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.subsection-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--friends-text-primary);
+  letter-spacing: -0.01em;
+  font-style: italic;
+}
+
+/* Friends list styling */
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.friend-card {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: var(--friends-background-secondary);
+  border: 1px solid var(--friends-border);
+  border-radius: var(--friends-border-radius);
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 2px 8px var(--friends-shadow);
+  min-height: auto;
+  max-height: 80px;
+}
+
+.friend-card:hover {
+  background-color: var(--friends-background);
+  border-color: var(--friends-blue);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--friends-shadow-hover);
+}
+
+.friend-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--friends-border-radius-small);
+  margin-right: 0.75rem;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.friend-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 48px;
+}
+
+.friend-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--friends-text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.friend-desc {
+  margin: 0;
+  color: var(--friends-text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Card styling */
+.info-card {
+  background-color: var(--friends-background-secondary);
+  border: 1px solid var(--friends-border);
+  border-radius: var(--friends-border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px var(--friends-shadow);
+}
+
+.code-block {
+  background-color: var(--friends-text-primary);
+  color: var(--friends-background-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--friends-border-radius-small);
+  padding: 1.5rem;
+  font-family: var(--friends-font-mono);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+.text-content {
+  margin-bottom: 1.5rem;
+  color: var(--friends-text-primary);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.text-secondary {
+  color: var(--friends-text-secondary);
+}
+
+/* List styling */
+.content-list {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.content-list li {
+  margin-bottom: 0.75rem;
+  color: var(--friends-text-primary);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.content-list ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.content-list ul li {
+  margin-bottom: 0.5rem;
+  color: var(--friends-text-secondary);
+}
+
+/* Code styling */
+.inline-code {
+  background-color: var(--friends-background-secondary);
+  color: var(--friends-text-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: var(--friends-font-mono);
+  border: 1px solid var(--friends-border);
+}
+
+.code-line {
+  margin-bottom: 0.5rem;
+  color: var(--friends-background-secondary);
+  font-size: 0.95rem;
+}
+
+.code-line:last-child {
+  margin-bottom: 0;
+}
+
+/* Rules section */
+.rules-content {
+  background-color: var(--friends-background-secondary);
+  border-left: 4px solid var(--friends-blue);
+  padding: 2rem;
+  border-radius: 0 var(--friends-border-radius) var(--friends-border-radius) 0;
+  box-shadow: 0 2px 8px var(--friends-shadow);
+}
+
+.rule-item {
+  margin-bottom: 1.5rem;
+  color: var(--friends-text-primary);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.rule-item:last-child {
+  margin-bottom: 0;
+}
+
+.rule-item strong {
+  color: var(--friends-text-primary);
+}
+
+/* Info items */
+.info-item {
+  margin-bottom: 0.75rem;
+  color: var(--friends-text-primary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item strong {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .friends-page {
+    padding: 2rem 1rem;
+  }
+  
+  .friends-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.5rem;
+  }
+  
+  .friend-card {
+    padding: 0.5rem;
+    max-height: 70px;
+  }
+  
+  .friend-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .friend-info {
+    min-height: 40px;
+  }
+  
+  .info-card,
+  .code-block,
+  .rules-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.25rem;
+  }
+  
+  .friend-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  
+  .friend-avatar {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
