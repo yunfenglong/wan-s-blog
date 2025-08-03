@@ -1,0 +1,65 @@
+# .github/workflows/sync-web-pages.yml
+
+# Name of the workflow, which will be displayed in the "Actions" tab of your GitHub repository.
+name: web-deploy
+
+# This section defines the trigger for the workflow.
+# It runs on every push event to the 'main' branch.
+on:
+  push:
+    branches:
+      - main
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+jobs:
+  # This job is named 'sync-and-publish'
+  sync-and-publish:
+    # The type of runner that the job will run on. 'ubuntu-latest' is a good default.
+    runs-on: ubuntu-latest
+
+    # Permissions are required for the workflow to be able to write back to the repository.
+    # The GITHUB_TOKEN needs 'contents: write' to push changes.
+    permissions:
+      contents: write
+
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    steps:
+      # Step 1: Check out the repository's code
+      # This action checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
+      # It will check out the code from the 'main' branch, which triggered the workflow.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Modify the VuePress config file
+      # This step uses the 'sed' command (a stream editor) to find and replace the specific line.
+      # 's#find#replace#' is the substitution command. We use '#' as a delimiter to avoid issues with the slashes '/' in the path.
+      # It replaces "base: '/wan-s-blog/'," with "base: '/'," in the specified file.
+      - name: Modify config.ts for deployment
+        run: |
+          sed -i "s#base: '/wan-s-blog/'#base: '/'#" docs/.vuepress/config.ts
+        
+      # Step 3: Commit the changes and push to the 'web-pages' branch
+      # This step configures git with a bot user, adds the modified file, commits it,
+      # and then force-pushes it to the 'web-pages' branch.
+      - name: Commit and Push to web-pages
+        run: |
+          # Configure git user for the commit
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Add the modified file to the staging area
+          git add docs/.vuepress/config.ts
+          
+          # Check if there are any changes to commit to avoid empty commits
+          if ! git diff --staged --quiet; then
+            # Commit the changes with a descriptive message
+            git commit -m "web-deploy(Auto): Update base URL for web-pages branch"
+            
+            # Force push the changes to the 'web-pages' branch.
+            # The --force flag is necessary to overwrite the history of the target branch,
+            # ensuring it's always an exact copy of 'main' plus this one modification.
+            git push origin HEAD:web-pages --force
+          else
+            echo "No changes to commit. The base URL was likely already correct."
+          fi
+
