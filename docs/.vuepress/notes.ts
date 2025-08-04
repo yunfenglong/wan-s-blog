@@ -64,6 +64,62 @@ const enFIT3143Note = defineNoteConfig({
     }
   ],
 })
+
+const enFIT3080Note = defineNoteConfig({
+  dir: 'fit3080',
+  link: '/fit3080/',
+  sidebar: [
+    {
+      'text': 'Overview',
+      'link': 'README.md',
+    },
+    {
+      'text': 'Intro to AI',
+      'link': 'ai_basic.md'
+    },
+    {
+      'prefix': 'agents',
+      'text': 'Agents',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'search',
+      'text': 'Search',
+      'items': 'auto',
+    }
+  ]
+})
+
+const enFIT2004Note = defineNoteConfig({
+  dir: 'fit2004',
+  link: '/fit2004/',
+  sidebar: [
+    {
+      'text': 'Overview',
+      'link': 'README.md',
+    },
+    {
+      'prefix': 'introduction',
+      'text': 'Introduction',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'algorithms',
+      'text': 'Algorithms',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'data-structures',
+      'text': 'Data Structures',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'revision',
+      'text': 'Revision',
+      'items': 'auto',
+    },
+  ],
+})
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -71,7 +127,7 @@ const enFIT3143Note = defineNoteConfig({
 export const enNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [enFIT2014Note, enFIT3143Note],
+  notes: [enFIT2014Note, enFIT3143Note, enFIT3080Note, enFIT2004Note],
 })
 
 /* =================== locale: zh-CN ======================= */
@@ -88,6 +144,12 @@ const zhFIT3143Note = defineNoteConfig({
   sidebar: 'auto',
 })
 
+const zhFIT3080Note = defineNoteConfig({
+  dir: 'fit3080',
+  link: '/fit3080/',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -95,6 +157,6 @@ const zhFIT3143Note = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'zh/notes',
   link: '/zh/',
-  notes: [zhFIT2014Note, zhFIT3143Note],
+  notes: [zhFIT2014Note, zhFIT3143Note, zhFIT3080Note],
 })
 
