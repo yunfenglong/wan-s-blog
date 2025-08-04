@@ -50,7 +50,7 @@ export default defineUserConfig({
     /* 页内信息 */
     // editLink: true,
     // lastUpdated: true,
-    // contributors: true,
+    contributors: false,
     changelog: true,
 
     /**
@@ -127,36 +127,40 @@ export default defineUserConfig({
     markdown: {
       codeTree: true,
       markmap: true,
-    //   abbr: true,         // 启用 abbr 语法  *[label]: content
-    //   annotation: true,   // 启用 annotation 语法  [+label]: content
+      abbr: true,         // 启用 abbr 语法  *[label]: content
+      annotation: true,   // 启用 annotation 语法  [+label]: content
     //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
-    //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
-    //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
+      caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
+      plot: true,         // 启用隐秘文本语法 !!xxxx!!
     //   bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
     //   youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
     //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
     //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
       icon: { provider: 'iconify' },        // 启用内置图标语法  ::icon-name::
-    //   table: true,        // 启用表格增强容器语法 ::: table
+      // table: {
+      //   align: 'left',
+      //   maxContent: true,
+      //   copy: true,
+      // },        // 启用表格增强容器语法 ::: table
     //   codepen: true,      // 启用嵌入 codepen 语法 @[codepen](user/slash)
     //   replit: true,       // 启用嵌入 replit 语法 @[replit](user/repl-name)
     //   codeSandbox: true,  // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)
     //   jsfiddle: true,     // 启用嵌入 jsfiddle 语法 @[jsfiddle](user/id)
-    //   npmTo: true,        // 启用 npm-to 容器  ::: npm-to
+      npmTo: true,        // 启用 npm-to 容器  ::: npm-to
       demo: true,         // 启用 demo 容器  ::: demo
-    //   repl: {             // 启用 代码演示容器
-    //     go: true,         // ::: go-repl
-    //     rust: true,       // ::: rust-repl
-    //     kotlin: true,     // ::: kotlin-repl
-    //     python: true,     // ::: python-repl
-    //   },
-    //   math: {             // 启用数学公式
-    //     type: 'katex',
-    //   },
-    //   chartjs: true,      // 启用 chart.js
-    //   echarts: true,      // 启用 ECharts
+      repl: {             // 启用 代码演示容器
+        go: true,         // ::: go-repl
+        rust: true,       // ::: rust-repl
+        kotlin: true,     // ::: kotlin-repl
+        python: true,     // ::: python-repl
+      },
+      math: {             // 启用数学公式
+        type: 'katex',
+      },
+      chartjs: true,      // 启用 chart.js
+      echarts: true,      // 启用 ECharts
       mermaid: true,      // 启用 mermaid
-    //   flowchart: true,    // 启用 flowchart
+      flowchart: true,    // 启用 flowchart
     //   image: {
     //     figure: true,     // 启用 figure
     //     lazyload: true,   // 启用图片懒加载
@@ -165,6 +169,9 @@ export default defineUserConfig({
     //   },
     //   include: true,      // 在 Markdown 文件中导入其他 markdown 文件内容
       imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
+      timeline: true, // 启用时间轴容器 ::: timeline
+      collapse: true, // 启用折叠容器 ::: collapse
+      field: true, // 启用字段容器 ::: field
     },
 
     /**

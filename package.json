@@ -30,6 +30,9 @@
     "@iconify/json": "^2.2.362",
     "echarts": "^5.6.0",
     "typescript": "^5.8.3",
-    "mermaid": "^11.8.0"
+    "mermaid": "^11.8.0",
+    "pyodide": "^0.28.0",
+    "chart.js": "^4.4.0",
+    "flowchart.ts": "^3.0.1"
   }
 }
