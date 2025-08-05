@@ -120,6 +120,33 @@ const enFIT2004Note = defineNoteConfig({
     },
   ],
 })
+
+const enFIT2102Note = defineNoteConfig({
+  dir: 'programming-paradigm',
+  link: '/programming-paradigm/',
+  sidebar: [
+    {
+      'text': 'Overview',
+      'link': 'README.md',
+    },
+    {
+      'prefix': 'func_program',
+      'text': 'Functional Programming',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'js',
+      'text': 'JavaScript',
+      'items': 'auto',
+    },
+    {
+      'prefix': 'ts',
+      'text': 'TypeScript',
+      'items': 'auto',
+    }
+  ]
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -127,7 +154,7 @@ const enFIT2004Note = defineNoteConfig({
 export const enNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [enFIT2014Note, enFIT3143Note, enFIT3080Note, enFIT2004Note],
+  notes: [enFIT2014Note, enFIT3143Note, enFIT3080Note, enFIT2004Note, enFIT2102Note],
 })
 
 /* =================== locale: zh-CN ======================= */

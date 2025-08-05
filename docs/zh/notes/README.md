@@ -36,4 +36,24 @@ config:
         icon: material-symbols:web
         details: 现代网页开发，包括响应式设计、框架和用户体验原理
         linkText: 敬请期待
+      -
+        title: 计算机科学连续数学
+        icon: material-symbols:calculate
+        details: 计算机科学的数学基础，包括离散数学、逻辑学和计算理论
+        linkText: 敬请期待
+      -
+        title: 计算机科学导论
+        icon: material-symbols:computer
+        details: 计算机科学基本概念，探索不同编程语言和基础理论
+        linkText: 敬请期待
+      -
+        title: 数据库设计
+        icon: material-symbols:database
+        details: 数据库设计原理、关系模型、规范化和查询优化技术
+        linkText: 敬请期待
+      -
+        title: 面向对象设计
+        icon: material-symbols:hub
+        details: 面向对象编程原理、设计模式和软件架构基础
+        linkText: 敬请期待
 ---
