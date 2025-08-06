@@ -1,7 +1,7 @@
 ---
 title: 静态网站托管入门
 createTime: 2025/08/01 21:48:56
-permalink: /zh/article/itoj0mz7/
+permalink: /zh-CN/article/itoj0mz7/
 tags:
   - GitHub Actions
   - 部署

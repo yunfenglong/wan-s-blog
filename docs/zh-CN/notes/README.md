@@ -8,13 +8,13 @@ config:
         title: 计算理论
         icon: material-symbols:functions
         details: 探索计算的数学基础、形式语言、自动机理论和计算复杂性
-        link: /zh/notes/fit2014/
+        link: /zh-CN/notes/fit2014/
         linkText: 开始探索
       -
         title: 并行计算
         icon: material-symbols:memory
         details: 掌握高性能计算原理、并行架构和多处理器编程技术
-        link: /zh/notes/fit3143/
+        link: /zh-CN/notes/fit3143/
         linkText: 开始探索
       -
         title: 算法与数据结构

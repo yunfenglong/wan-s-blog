@@ -1,7 +1,7 @@
 ---
 title: 使用本站作为模版
 createTime: 2025/08/03 22:21:50
-permalink: /zh/article/u3ylxdo1/
+permalink: /zh-CN/article/u3ylxdo1/
 tags: 
   - 集成
   - 部署
@@ -223,7 +223,7 @@ export default defineClientConfig({
 
 本模板支持英文和中文：
 - 英文组件在 `docs/.vuepress/theme/components/`
-- 中文组件在 `docs/zh/theme/components/`
+- 中文组件在 `docs/zh-CN/theme/components/`
 
 ## 🛠️ 开发
 
@@ -258,7 +258,7 @@ docs/
 ├── README.md                 # 主页
 ├── Tech/                     # 技术文章
 ├── notes/                    # 学习笔记
-└── zh/                       # 中文内容
+└── zh-CN/                       # 中文内容
 ```
 
 ## 🔧 故障排除

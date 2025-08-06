@@ -4,7 +4,7 @@ tags:
   - Monash
   - CS
 createTime: 2025/08/02 17:45:25
-permalink: /zh/fit3143/
+permalink: /zh-CN/fit3143/
 ---
 
 # FIT3143 - 并行计算
