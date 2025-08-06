@@ -223,7 +223,7 @@ Use Iconify icons throughout your components:
 
 The template supports both English and Chinese:
 - English components in `docs/.vuepress/theme/components/`
-- Chinese components in `docs/zh/theme/components/`
+- Chinese components in `docs/zh-CN/theme/components/`
 
 ## 🛠️ Development
 
@@ -258,7 +258,7 @@ docs/
 ├── README.md                 # Homepage
 ├── Tech/                     # Technical articles
 ├── notes/                    # Study notes
-└── zh/                       # Chinese content
+└── zh-CN/                       # Chinese content
 ```
 
 ## 🔧 Troubleshooting
