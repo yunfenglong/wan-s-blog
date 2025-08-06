@@ -159,31 +159,56 @@ export const enNotes = defineNotesConfig({
 
 /* =================== locale: zh-CN ======================= */
 
-const zhFIT2014Note = defineNoteConfig({
-  dir: 'FIT2014',
-  link: '/fit2014/',
-  sidebar: 'auto',
+/**
+ * 导出所有的 note
+ * 每一个 note 都应该填入到 `notes.notes` 数组中
+ */
+export const zhCNNotes = defineNotesConfig({
+  dir: 'zh-CN/notes',
+  link: '/zh-CN/',
+  notes: [
+    defineNoteConfig({
+      dir: 'FIT2014',
+      link: '/fit2014/',
+      sidebar: 'auto',
+    }), 
+    defineNoteConfig({
+      dir: 'fit3143',
+      link: '/fit3143/',
+      sidebar: 'auto',
+    }), 
+    defineNoteConfig({
+      dir: 'fit3080',
+      link: '/fit3080/',
+      sidebar: 'auto',
+    }),
+  ],
 })
 
-const zhFIT3143Note = defineNoteConfig({
-  dir: 'fit3143',
-  link: '/fit3143/',
-  sidebar: 'auto',
-})
-
-const zhFIT3080Note = defineNoteConfig({
-  dir: 'fit3080',
-  link: '/fit3080/',
-  sidebar: 'auto',
-})
+/* =================== locale: zh-TW ======================= */
 
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
  */
-export const zhNotes = defineNotesConfig({
-  dir: 'zh/notes',
-  link: '/zh/',
-  notes: [zhFIT2014Note, zhFIT3143Note, zhFIT3080Note],
+export const zhTWNotes = defineNotesConfig({
+  dir: 'zh-TW/notes',
+  link: '/zh-TW/',
+  notes: [
+    defineNoteConfig({
+      dir: 'FIT2014',
+      link: '/fit2014/',
+      sidebar: 'auto',
+    }), 
+    defineNoteConfig({
+      dir: 'fit3143',
+      link: '/fit3143/',
+      sidebar: 'auto',
+    }), 
+    defineNoteConfig({
+      dir: 'fit3080',
+      link: '/fit3080/',
+      sidebar: 'auto',
+    }),
+  ],
 })
-

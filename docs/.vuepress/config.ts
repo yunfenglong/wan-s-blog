@@ -19,7 +19,9 @@ export default defineUserConfig({
   
   head: [
     ['link', { rel: 'icon', href: '/wan-s-blog/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/wan-s-blog/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon.ico' }],
   ],
   
   locales: {
@@ -28,7 +30,12 @@ export default defineUserConfig({
       lang: 'en-US',
       description: 'WAN\'s blog',
     },
-    '/zh/': {
+    '/zh-TW/': {
+      title: 'WAN\'s Blog',
+      lang: 'zh-TW',
+      description: 'WAN的部落格',
+    },
+    '/zh-CN/': {
       title: 'WAN\'s Blog',
       lang: 'zh-CN',
       description: 'WAN的博客',

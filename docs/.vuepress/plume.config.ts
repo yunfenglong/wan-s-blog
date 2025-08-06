@@ -11,8 +11,8 @@
  */
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import { enNavbar, zhNavbar } from './navbar'
-import { enNotes, zhNotes } from './notes'
+import { enNavbar, zhCNNavbar, zhTWNavbar } from './navbar'
+import { enNotes, zhCNNotes, zhTWNotes } from './notes'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -86,7 +86,34 @@ export default defineThemeConfig({
       //    content: '',
       //  },
     },
-    '/zh/': {
+    '/zh-TW/': {
+      /**
+       * @see https://theme-plume.vuejs.press/config/basic/#profile
+       */
+      profile: {
+        avatar: 'avatar.jpeg',
+        name: 'WAN的部落格',
+        description: '',
+        circle: true,
+        location: '中國·廣州',
+        organization: '蒙納士大學',
+      },
+
+      navbar: zhTWNavbar,
+      notes: zhTWNotes,
+
+      /**
+       * 公告板
+       * @see https://theme-plume.vuejs.press/guide/features/bulletin/
+       */
+       // bulletin: {
+       //   layout: 'top-right',
+       //   contentType: 'markdown',
+       //   title: '',
+       //   content: '',
+       // },
+    },
+    '/zh-CN/': {
       /**
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
@@ -99,8 +126,8 @@ export default defineThemeConfig({
         organization: '蒙纳士大学',
       },
 
-      navbar: zhNavbar,
-      notes: zhNotes,
+      navbar: zhCNNavbar,
+      notes: zhCNNotes,
 
       /**
        * 公告板
