@@ -12,6 +12,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import vitePluginGlob from 'vite-plugin-glob'
 
 export default defineUserConfig({
   base: '/wan-s-blog/',
@@ -42,7 +43,14 @@ export default defineUserConfig({
     },
   },
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [
+        vitePluginGlob(),
+      ],
+    },
+  }),
+
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
