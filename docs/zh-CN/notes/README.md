@@ -3,6 +3,8 @@ home: true
 config:
   -
     type: features
+    title: 一个程序员的笔记本
+    description: 这里存放着我在计算机科学世界里摸爬滚打时写下的所有笔记和感悟。从枯燥的理论到好玩的代码，都是我的心血总结。希望这份分享，能为你带来一点启发。
     features:
       -
         title: 计算理论

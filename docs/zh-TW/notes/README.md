@@ -3,6 +3,8 @@ home: true
 config:
   -
     type: features
+    title: 解鎖你嘅技術魂
+    description: 呢本獨家武功秘笈，帶你打通電腦科學嘅任督二脈。由演算法到人工智能，我幫你輕鬆練功、提升戰鬥力，點亮你嘅全方位技能樹！
     features:
       -
         title: 計算理論

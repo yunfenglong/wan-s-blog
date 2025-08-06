@@ -3,6 +3,8 @@ home: true
 config:
   -
     type: features
+    title: A Coder's Field Notes
+    description: Welcome to my personal collection of computer science notes. This is my digital brain dump of summaries, insights, and 'aha!' moments from my learning journey. I hope they help you on yours too!
     features:
       -
         title: Theory of Computation
