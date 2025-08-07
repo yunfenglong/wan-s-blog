@@ -24,6 +24,11 @@ export const enNotes = defineNotesConfig({
             'text': 'Proofs',
             'items': 'auto',
           },
+          {
+            'prefix': 'expressions',
+            'text': 'Expressions',
+            'items': 'auto',
+          },
         ],
       }), 
   
