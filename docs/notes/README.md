@@ -25,15 +25,16 @@ config:
         link: /notes/programming-paradigm/
         linkText: Available Now
       -
+        title: Artificial Intelligence
+        icon: material-symbols:psychology
+        details: Machine learning, neural networks, and intelligent system design fundamentals
+        link: /notes/fit3080/
+        linkText: Available Now
+      -
         title: Algorithms & Data Structures
         icon: material-symbols:account-tree
         details: Advanced algorithmic design, analysis, and optimization techniques for efficient problem solving
         linkText: Coming Early 2026
-      -
-        title: Artificial Intelligence
-        icon: material-symbols:psychology
-        details: Machine learning, neural networks, and intelligent system design fundamentals
-        linkText: Coming Fall 2025
       -
         title: Front-end Development
         icon: material-symbols:web

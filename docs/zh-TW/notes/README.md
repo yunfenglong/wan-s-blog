@@ -19,15 +19,16 @@ config:
         link: /zh-TW/notes/fit3143/
         linkText: 開始探索
       -
+        title: 人工智能
+        icon: material-symbols:psychology
+        details: 機器學習、神經網絡同智能系統設計基礎
+        links: /zh-TW/notes/fit3143
+        linkText: 開始探索
+      -
         title: 演算法同數據結構
         icon: material-symbols:account-tree
         details: 高級演算法設計、分析同優化技術，用於高效解決問題
         linkText: 敬請期待
-      -
-        title: 人工智能
-        icon: material-symbols:psychology
-        details: 機器學習、神經網絡同智能系統設計基礎
-        linkText: 即將推出
       -
         title: 編程範式
         icon: material-symbols:code

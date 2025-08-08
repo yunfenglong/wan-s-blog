@@ -19,15 +19,16 @@ config:
         link: /zh-CN/notes/fit3143/
         linkText: 开始探索
       -
+        title: 人工智能
+        icon: material-symbols:psychology
+        details: 机器学习、神经网络和智能系统设计基础
+        link: /zh-CN/notes/fit3080/
+        linkText: 开始探索
+      -
         title: 算法与数据结构
         icon: material-symbols:account-tree
         details: 高级算法设计、分析和优化技术，用于高效解决问题
         linkText: 敬请期待
-      -
-        title: 人工智能
-        icon: material-symbols:psychology
-        details: 机器学习、神经网络和智能系统设计基础
-        linkText: 即将推出
       -
         title: 编程范式
         icon: material-symbols:code
