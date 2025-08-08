@@ -6,7 +6,7 @@
   <div class="about-me-name">
     <p>你好，好高興認識你！👋</p>
     <p class="about-me-card-text-big">你可以叫我WARREN。</p>
-    <p>始於夢想，成於實幹。</p>
+    <p>一個鍾意冇嘢搵嘢搞，再將佢搞掂嘅IT狗。</p>
   </div>
 </template>
 

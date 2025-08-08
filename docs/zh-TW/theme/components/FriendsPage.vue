@@ -11,7 +11,7 @@ import FriendsPage from '../../../.vuepress/theme/template/FriendsPage.vue'
 const myInfo = {
   name: 'WARREN',
   website: 'https://yunfenglong.github.io/wan-s-blog/',
-  description: '始於夢想，成於實幹。',
+  description: '一個鍾意冇嘢搵嘢搞，再將佢搞掂嘅IT狗。',
   avatar: 'https://yunfenglong.github.io/wan-s-blog/avatar.jpeg',
   siteShot: '"將於今年秋季提供"'
 }

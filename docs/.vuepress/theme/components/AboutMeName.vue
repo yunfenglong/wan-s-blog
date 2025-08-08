@@ -6,7 +6,7 @@
   <div class="about-me-name">
     <p>Hey, nice to meet you!👋</p>
     <p class="about-me-card-text-big">You can call me WARREN.</p>
-    <p>On dreaming, on doing.</p>
+    <p>A professional nerd who enjoys creating bugs and, occasionally, features.</p>
   </div>
 </template>
 

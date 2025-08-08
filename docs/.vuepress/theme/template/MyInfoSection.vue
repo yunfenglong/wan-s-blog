@@ -42,7 +42,7 @@ defineProps({
     default: () => ({
       name: 'WARREN',
       website: 'https://yunfenglong.github.io/wan-s-blog/',
-      description: 'On dreaming, on doing.',
+      description: 'A professional nerd who enjoys creating bugs and, occasionally, features.',
       avatar: 'https://yunfenglong.github.io/wan-s-blog/avatar.jpeg',
       siteShot: '"Will be available this fall"'
     })
