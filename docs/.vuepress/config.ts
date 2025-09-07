@@ -15,7 +15,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 import vitePluginGlob from 'vite-plugin-glob'
 
 export default defineUserConfig({
-  base: '/wan-s-blog/',
+  base: '/',
   lang: 'en-US',
   
   head: [
