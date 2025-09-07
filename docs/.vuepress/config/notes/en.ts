@@ -29,6 +29,11 @@ export const enNotes = defineNotesConfig({
             'text': 'Expressions',
             'items': 'auto',
           },
+          {
+            'prefix': 'exam-prep',
+            'text': 'Exam Preperation',
+            'items': 'auto',
+          },
         ],
       }), 
   
